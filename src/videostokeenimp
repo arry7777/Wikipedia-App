@@ -1,0 +1,92 @@
+client identifier = ceac67599d8b06eca3a89905504dcc35a767f2f6;
+
+client secret= LSA7sjw62dhUz77thA5UYUmjhM6ZsGYoYMUw7IBwkk8lxVmmRxge6OQK0NcoaaPZfGlAemFEWXz/QcfNgrDQ2dIXm5FGmltidgxF9fqauxlHQ6MhsLm++3mKoQNbS8Jr;
+
+Authorize URL= https://api.vimeo.com/oauth/authorize;
+
+Access token URL=https://api.vimeo.com/oauth/access_token;
+
+$client = new Vimeo("{client_id}", "{client_secret}", "{access_token}");
+
+$client = new Vimeo("123", "abc", "a1b");
+
+
+//Access Token for my video account app name--react_hooks_app_video_app
+accessToken=a9d9783e082f768762814486f81f33c7
+	
+
+public
+	
+
+Aug 23, 2021
+	
+
+Never
+
+	
+
+
+//fetch call
+fetch("https://vimeostefan-skliarovv1.p.rapidapi.com/searchVideos", {
+	"method": "POST",
+	"headers": {
+		"content-type": "application/x-www-form-urlencoded",
+		"x-rapidapi-host": "Vimeostefan-skliarovV1.p.rapidapi.com",
+		"x-rapidapi-key": "undefined"
+	},
+	"body": {
+		"accessToken": "<REQUIRED>"
+	}
+})
+.then(response => {
+	console.log(response);
+})
+.catch(err => {
+	console.error(err);
+});
+fetch("https://vimeostefan-skliarovv1.p.rapidapi.com/unsubscribeUserFromCategory", {
+	"method": "POST",
+	"headers": {
+		"content-type": "application/x-www-form-urlencoded",
+		"x-rapidapi-host": "Vimeostefan-skliarovV1.p.rapidapi.com",
+		"x-rapidapi-key": "undefined"
+	},
+	"body": {
+		"accessToken": "<REQUIRED>",
+		"categoryName": "<REQUIRED>"
+	}
+})
+.then(response => {
+	console.log(response);
+})
+.catch(err => {
+	console.error(err);
+});
+
+//api call 
+let Vimeo = require('vimeo').Vimeo;
+let client = new Vimeo("{client_id}", "{client_secret}", "{access_token}");
+
+client.request({
+  method: 'GET',
+  path: '/tutorial'
+}, function (error, body, status_code, headers) {
+  if (error) {
+    console.log(error);
+  }
+
+  console.log(body);
+})
+
+// http method
+HTTP
+
+In cURL:
+
+curl https://api.vimeo.com/tutorial -H "Authorization: bearer {access_token}"
+
+As HTTP:
+
+GET /tutorial HTTP/1.1
+Host: api.vimeo.com
+Authorization: bearer {access_token}

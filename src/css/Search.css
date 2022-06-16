@@ -1,0 +1,17 @@
+.search{
+ margin-top: 200px;
+ margin-left: 300px;
+ height: max-content;
+ width: 70vw;
+ background-color: burlywood;
+}
+.wikipedia img {
+ height: 30em;
+ width: 40em;
+}
+.input{
+ height: 3em;
+ width:60em;
+ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+ font-size: 1em;
+}
