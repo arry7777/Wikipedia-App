@@ -1,4 +1,4 @@
-import e from 'cors';
+
 import React, { useEffect, useState } from 'react'
 import { Show } from './Show';
 // import '../css/Search.css';
@@ -40,7 +40,7 @@ const fetchResults = async (searchInput) => {
     <>
       <div className='search'>
         <div className='wikipedia'>
-          <img src={logo}  />
+          <img src={logo} alt="name" />
           
           <form className='form'>
             <label htmlFor='search'>search</label>
